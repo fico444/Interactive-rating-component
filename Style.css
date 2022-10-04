@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,700&family=Overpass:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    max-width: 100%;
+    height: 100vh;
+    background-color: #1F2023;
+}
+
+/*CARD Styles*/
+section {
+    width: 325px;
+    height: 360px;
+    background-color: #292f38;
+    padding: 26px;
+    border-radius: 5%;
+    margin: 160px auto 0;
+}
+
+section div,
+.ratingBtn {
+    background-color: #2e373f;
+    width: 2.7em;
+    height: 2.7em;
+    border-radius: 50%;
+    text-align: center;
+}
+
+div img {
+    width: 0.85em;
+    height: auto;
+    padding-top: 0.9em;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5em;
+    margin: 0.75em 0 0 0;
+}
+
+p {
+    color: hsl(216, 12%, 54%);
+    font-size: 0.87em;
+    margin: 0.8em 0.2em 0.4em 0;
+    line-height: 1.7em;
+}
+
+.ratingBtn {
+    display: inline-block;
+    line-height: 3.2em;
+    color: hsl(216, 12%, 54%);
+    margin: 1.5em 0.74em 0.7em 0;
+}
+
+/*
+.ratingBtn:hover {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+*/
+button {
+    color: hsl(0, 0%, 100%);
+    width: 20em;
+    height: 3.3em;
+    border-radius: 1.8em;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    margin: 1.1em 0 0.6em 0;
+    font-size: 0.87rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/*Tankyou State Styles*/
+#thanksImg {
+    width: 10em;
+    height: auto;
+    margin: 0.5em 1em 1em 4em;
+}
+
+#ratingDiv {
+    background-color: #2e373f;
+    width: 11.4em;
+    height: 2em;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0em 1em 1em 3.2em;
+}
+
+#ratingDiv p {
+    font-size: 1em;
+    line-height: 2.2em;
+    margin-top: 0;
+    color: hsl(25, 97%, 53%);
+}
+
+h2 {
+    margin: 1.3em 0em 0.5em 3.5em;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5em;
+}
+
+h2+p {
+    font-size: 0.94em;
+    margin: 0 0 1em 0;
+    text-align: center;
+}
+
+/*FOOTER*/
+.attribution {
+    margin-top: 3%;
+    font-size: 11px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*Desktop Styles*/
+
+@media (min-width: 768px) {
+    section {
+        width: 410px;
+        height: 415px;
+        margin: 195px auto 0;
+    }
+
+    section div,
+    .ratingBtn {
+        width: 3.2em;
+        height: 3.2em;
+        margin: 5px 0 0 5px;
+    }
+
+    div img {
+        width: 0.95em;
+        height: auto;
+        padding-top: 1.1em;
+    }
+    h1 {
+        font-size: 1.85em;
+        margin: 1.1em 0 0 0.2em;
+    }
+    
+    p {
+        font-size: 1em;
+        margin: 0.7em 0.2em 0.4em 0.2em;
+        line-height: 1.7em;
+    }
+    
+    .ratingBtn {
+        margin: 1.2em 0.74em 0.7em 0.6em;
+    }
+    
+    button {
+        width: 24.6em;
+        margin: 1.65em 0 0.6em 0.3em;
+    }
+    
+    /*Tankyou State Styles*/
+    #thanksImg {
+        width: 10em;
+        height: auto;
+        margin: 0.5em 1em 1em 4em;
+    }
+    
+    #ratingDiv {
+        background-color: #2e373f;
+        width: 11.4em;
+        height: 2em;
+        border-radius: 20px;
+        text-align: center;
+        margin: 0em 1em 1em 3.2em;
+    }
+    
+    #ratingDiv p {
+        font-size: 1em;
+        line-height: 2.2em;
+        margin-top: 0;
+        color: hsl(25, 97%, 53%);
+    }
+    
+    h2 {
+        margin: 1.3em 0em 0.5em 3.5em;
+        font-size: 1.5em;
+    }
+    
+    h2+p {
+        font-size: 0.94em;
+        margin: 0 0 1em 0;
+        text-align: center;
+    }
+
+    /*Thanks Card*/
+
+    #thanksImg {
+        width: 11em;
+        height: auto;
+        margin: 1.2em 1em 1em 6.4em;
+    }
+    
+    #ratingDiv {
+        margin: 0.6em 1em 1em 6em;
+    }
+    
+    #ratingDiv p {
+        font-size: 1em;
+        line-height: 2.2em;
+        margin-top: 0;
+        color: hsl(25, 97%, 53%);
+    }
+    
+    h2 {
+        margin: 1.35em 0em 0.5em 4em;
+        font-size: 1.8em;
+    }
+    h2+p {
+        font-size: 1em;
+        margin: 0 0.5em 1em 0.5em;
+    }
+}
